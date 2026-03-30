@@ -30,5 +30,4 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@v6
         with:
-          name: binary
-          path: binary/dummy-server.bin  
+          name: binary  
