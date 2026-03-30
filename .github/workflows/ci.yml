@@ -27,7 +27,8 @@ jobs:
         with:
           name: binary
           path: binary/dummy-server.bin
-      - name: Download Artifacts
-        uses: actions/download-artifact@v6
-        with:
-          name: binary  
+      - name: push-artifacts
+        run: |
+          git add .
+          git commit - m 'public file'
+          git push
