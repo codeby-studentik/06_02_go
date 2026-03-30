@@ -27,4 +27,8 @@ jobs:
         with:
           name: binary
           path: binary/dummy-server.bin
-          retention-days: 30 
+      - name: Download Artifacts
+        uses: actions/download-artifact@v6
+        with:
+          name: binary
+          path: binary/dummy-server.bin  
