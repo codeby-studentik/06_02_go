@@ -25,4 +25,4 @@ jobs:
         with:
           name: binary
           path: ./dummy-server.bin
-
+          retention-days: 30 
