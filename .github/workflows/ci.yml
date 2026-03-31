@@ -23,12 +23,8 @@ jobs:
           curl -v http://localhost:8888
           kill $!
       - name: Upload Artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: binary
           path: binary/dummy-server.bin
-      - name: push-artifacts
-        run: |
-          git add .
-          git commit - m 'public file'
-          git push
+          retention-days: 30
